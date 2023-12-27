@@ -1,0 +1,541 @@
+{
+  "columns":
+  ["", "Pipelined", "II", "Bottleneck", "Details"]
+  , "children":
+  [
+    {
+      "name":"Kernel: maxpool2d"
+      , "data":
+      ["", "", ""]
+      , "debug":
+      [
+        [
+          {
+            "filename":"c:/intelFPGA/18.0/hld/board/terasic/de10_nano/test/github/device/squeezenet.cl"
+            , "line":9
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"brief"
+          , "text":"ND-Range"
+        }
+        , {
+          "type":"text"
+          , "text":"ND-Range"
+        }
+        , {
+          "type":"text"
+          , "text":"See %L for more information"
+          , "links":
+          [
+            {
+              "guide":"Best Practices Guide : Kernels"
+              , "link":"https://www.altera.com/documentation/mwh1391807516407.html#ipp1476408832230"
+            }
+          ]
+        }
+      ]
+      , "children":
+      [
+        {
+          "name":"maxpool2d.B1"
+          , "data":
+          ["Yes", "1968803291", "n/a"]
+          , "debug":
+          [
+            [
+              {
+                "filename":"c:/intelFPGA/18.0/hld/board/terasic/de10_nano/test/github/device/squeezenet.cl"
+                , "line":16
+              }
+            ]
+            , [
+              {
+                "filename":"c:/intelFPGA/18.0/hld/board/terasic/de10_nano/test/github/device/squeezenet.cl"
+                , "line":16
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"brief"
+              , "text":"Thread capacity = 169"
+            }
+            , {
+              "type":"text"
+              , "text":"Thread capacity = 169"
+            }
+          ]
+          , "children":
+          [
+            {
+              "name":"Coalesced loop"
+              , "data":
+              ["n/a", "n/a", "n/a"]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"c:/intelFPGA/18.0/hld/board/terasic/de10_nano/test/github/device/squeezenet.cl"
+                    , "line":18
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"Auto-coalesced"
+                }
+              ]
+              , "children":
+              [
+              ]
+            }
+            , {
+              "name":"maxpool2d.B2"
+              , "data":
+              ["Yes", ">=424653767", "n/a"]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"c:/intelFPGA/18.0/hld/board/terasic/de10_nano/test/github/device/squeezenet.cl"
+                    , "line":25
+                  }
+                ]
+                , [
+                  {
+                    "filename":"c:/intelFPGA/18.0/hld/board/terasic/de10_nano/test/github/device/squeezenet.cl"
+                    , "line":25
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"brief"
+                  , "text":"Thread capacity = 155"
+                }
+                , {
+                  "type":"text"
+                  , "text":"Thread capacity = 155"
+                }
+              ]
+              , "children":
+              [
+                {
+                  "name":"Coalesced loop"
+                  , "data":
+                  ["n/a", "n/a", "n/a"]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"c:/intelFPGA/18.0/hld/board/terasic/de10_nano/test/github/device/squeezenet.cl"
+                        , "line":28
+                      }
+                    ]
+                  ]
+                  , "details":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"Auto-coalesced"
+                    }
+                  ]
+                  , "children":
+                  [
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+    , {
+      "name":"Kernel: conv2d3x3"
+      , "data":
+      ["", "", ""]
+      , "debug":
+      [
+        [
+          {
+            "filename":"c:/intelFPGA/18.0/hld/board/terasic/de10_nano/test/github/device/squeezenet.cl"
+            , "line":53
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"brief"
+          , "text":"ND-Range"
+        }
+        , {
+          "type":"text"
+          , "text":"ND-Range"
+        }
+        , {
+          "type":"text"
+          , "text":"See %L for more information"
+          , "links":
+          [
+            {
+              "guide":"Best Practices Guide : Kernels"
+              , "link":"https://www.altera.com/documentation/mwh1391807516407.html#ipp1476408832230"
+            }
+          ]
+        }
+      ]
+      , "children":
+      [
+        {
+          "name":"conv2d3x3.B1"
+          , "data":
+          ["Yes", "22604688", "n/a"]
+          , "debug":
+          [
+            [
+              {
+                "filename":"c:/intelFPGA/18.0/hld/board/terasic/de10_nano/test/github/device/squeezenet.cl"
+                , "line":64
+              }
+            ]
+            , [
+              {
+                "filename":"c:/intelFPGA/18.0/hld/board/terasic/de10_nano/test/github/device/squeezenet.cl"
+                , "line":64
+              }
+            ]
+            , [
+              {
+                "filename":"c:/intelFPGA/18.0/hld/board/terasic/de10_nano/test/github/device/squeezenet.cl"
+                , "line":89
+              }
+            ]
+            , [
+              {
+                "filename":"c:/intelFPGA/18.0/hld/board/terasic/de10_nano/test/github/device/squeezenet.cl"
+                , "line":90
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"brief"
+              , "text":"Thread capacity = 422"
+            }
+            , {
+              "type":"text"
+              , "text":"Thread capacity = 422"
+            }
+          ]
+          , "children":
+          [
+            {
+              "name":"conv2d3x3.B2"
+              , "data":
+              ["Yes", "4294967295", "n/a"]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"c:/intelFPGA/18.0/hld/board/terasic/de10_nano/test/github/device/squeezenet.cl"
+                    , "line":70
+                  }
+                ]
+                , [
+                  {
+                    "filename":"c:/intelFPGA/18.0/hld/board/terasic/de10_nano/test/github/device/squeezenet.cl"
+                    , "line":70
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"brief"
+                  , "text":"Thread capacity = 399"
+                }
+                , {
+                  "type":"text"
+                  , "text":"Thread capacity = 399"
+                }
+              ]
+              , "children":
+              [
+                {
+                  "name":"Fully unrolled loop"
+                  , "data":
+                  ["n/a", "n/a", "n/a"]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"c:/intelFPGA/18.0/hld/board/terasic/de10_nano/test/github/device/squeezenet.cl"
+                        , "line":73
+                      }
+                    ]
+                  ]
+                  , "details":
+                  [
+                    {
+                      "type":"brief"
+                      , "text":"Unrolled by #pragma unroll"
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"Unrolled by #pragma unroll"
+                    }
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"Fully unrolled loop"
+                      , "data":
+                      ["n/a", "n/a", "n/a"]
+                      , "debug":
+                      [
+                        [
+                          {
+                            "filename":"c:/intelFPGA/18.0/hld/board/terasic/de10_nano/test/github/device/squeezenet.cl"
+                            , "line":76
+                          }
+                        ]
+                      ]
+                      , "details":
+                      [
+                        {
+                          "type":"brief"
+                          , "text":"Auto-unrolled"
+                        }
+                        , {
+                          "type":"text"
+                          , "text":"Auto-unrolled"
+                        }
+                      ]
+                      , "children":
+                      [
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+    , {
+      "name":"Kernel: conv2d1x1"
+      , "data":
+      ["", "", ""]
+      , "debug":
+      [
+        [
+          {
+            "filename":"c:/intelFPGA/18.0/hld/board/terasic/de10_nano/test/github/device/squeezenet.cl"
+            , "line":102
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"brief"
+          , "text":"ND-Range"
+        }
+        , {
+          "type":"text"
+          , "text":"ND-Range"
+        }
+        , {
+          "type":"text"
+          , "text":"See %L for more information"
+          , "links":
+          [
+            {
+              "guide":"Best Practices Guide : Kernels"
+              , "link":"https://www.altera.com/documentation/mwh1391807516407.html#ipp1476408832230"
+            }
+          ]
+        }
+      ]
+      , "children":
+      [
+        {
+          "name":"conv2d1x1.B1"
+          , "data":
+          ["Yes", "80219328", "n/a"]
+          , "debug":
+          [
+            [
+              {
+                "filename":"c:/intelFPGA/18.0/hld/board/terasic/de10_nano/test/github/device/squeezenet.cl"
+                , "line":115
+              }
+            ]
+            , [
+              {
+                "filename":"c:/intelFPGA/18.0/hld/board/terasic/de10_nano/test/github/device/squeezenet.cl"
+                , "line":115
+              }
+            ]
+            , [
+              {
+                "filename":"c:/intelFPGA/18.0/hld/board/terasic/de10_nano/test/github/device/squeezenet.cl"
+                , "line":130
+              }
+            ]
+            , [
+              {
+                "filename":"c:/intelFPGA/18.0/hld/board/terasic/de10_nano/test/github/device/squeezenet.cl"
+                , "line":131
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"brief"
+              , "text":"Thread capacity = 217"
+            }
+            , {
+              "type":"text"
+              , "text":"Thread capacity = 217"
+            }
+          ]
+          , "children":
+          [
+            {
+              "name":"conv2d1x1.B2"
+              , "data":
+              ["Yes", "4294967295", "n/a"]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"c:/intelFPGA/18.0/hld/board/terasic/de10_nano/test/github/device/squeezenet.cl"
+                    , "line":120
+                  }
+                ]
+                , [
+                  {
+                    "filename":"c:/intelFPGA/18.0/hld/board/terasic/de10_nano/test/github/device/squeezenet.cl"
+                    , "line":120
+                  }
+                ]
+                , [
+                  {
+                    "filename":"c:/intelFPGA/18.0/hld/board/terasic/de10_nano/test/github/device/squeezenet.cl"
+                    , "line":128
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"brief"
+                  , "text":"Thread capacity = 205"
+                }
+                , {
+                  "type":"text"
+                  , "text":"Thread capacity = 205"
+                }
+              ]
+              , "children":
+              [
+              ]
+            }
+          ]
+        }
+      ]
+    }
+    , {
+      "name":"Kernel: avgpool2d"
+      , "data":
+      ["", "", ""]
+      , "debug":
+      [
+        [
+          {
+            "filename":"c:/intelFPGA/18.0/hld/board/terasic/de10_nano/test/github/device/squeezenet.cl"
+            , "line":140
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"brief"
+          , "text":"ND-Range"
+        }
+        , {
+          "type":"text"
+          , "text":"ND-Range"
+        }
+        , {
+          "type":"text"
+          , "text":"See %L for more information"
+          , "links":
+          [
+            {
+              "guide":"Best Practices Guide : Kernels"
+              , "link":"https://www.altera.com/documentation/mwh1391807516407.html#ipp1476408832230"
+            }
+          ]
+        }
+      ]
+      , "children":
+      [
+        {
+          "name":"avgpool2d.B1"
+          , "data":
+          ["Yes", "80219328", "n/a"]
+          , "debug":
+          [
+            [
+              {
+                "filename":"c:/intelFPGA/18.0/hld/board/terasic/de10_nano/test/github/device/squeezenet.cl"
+                , "line":147
+              }
+            ]
+            , [
+              {
+                "filename":"c:/intelFPGA/18.0/hld/board/terasic/de10_nano/test/github/device/squeezenet.cl"
+                , "line":147
+              }
+            ]
+            , [
+              {
+                "filename":"c:/intelFPGA/18.0/hld/board/terasic/de10_nano/test/github/device/squeezenet.cl"
+                , "line":150
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"brief"
+              , "text":"Thread capacity = 157"
+            }
+            , {
+              "type":"text"
+              , "text":"Thread capacity = 157"
+            }
+          ]
+          , "children":
+          [
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<board name="de10_nano_sharedonly" vfabric="0" big_endian="0">
+	 <global_mem_config name="" mode="burst-interleaved"/> 
+	<kernel name="avgpool2d" csr_addr="0" csr_size="128" work_group_invariant="1" vector_lanes="1" >
+		<work_group size_x="0" size_y="0" size_z="0" max_size="2147483647"/>
+			<argument index="0" type="2" category="1" size="8" >
+			</argument>
+			<argument index="1" type="2" category="1" size="8" >
+			</argument>
+	</kernel>
+	<kernel name="conv2d1x1" csr_addr="256" csr_size="256" work_group_invariant="1" vector_lanes="1" >
+		<work_group size_x="0" size_y="0" size_z="0" max_size="2147483647"/>
+			<argument index="0" type="0" category="0" size="4" >
+			</argument>
+			<argument index="1" type="0" category="0" size="4" >
+			</argument>
+			<argument index="2" type="2" category="1" size="8" >
+			</argument>
+			<argument index="3" type="2" category="1" size="8" >
+			</argument>
+			<argument index="4" type="2" category="1" size="8" >
+			</argument>
+			<argument index="5" type="2" category="1" size="8" >
+			</argument>
+	</kernel>
+	<kernel name="conv2d3x3" csr_addr="512" csr_size="256" work_group_invariant="1" vector_lanes="1" >
+		<work_group size_x="0" size_y="0" size_z="0" max_size="2147483647"/>
+			<argument index="0" type="0" category="0" size="4" >
+			</argument>
+			<argument index="1" type="0" category="0" size="4" >
+			</argument>
+			<argument index="2" type="0" category="0" size="4" >
+			</argument>
+			<argument index="3" type="0" category="0" size="4" >
+			</argument>
+			<argument index="4" type="0" category="0" size="4" >
+			</argument>
+			<argument index="5" type="0" category="0" size="4" >
+			</argument>
+			<argument index="6" type="2" category="1" size="8" >
+			</argument>
+			<argument index="7" type="2" category="1" size="8" >
+			</argument>
+			<argument index="8" type="2" category="1" size="8" >
+			</argument>
+			<argument index="9" type="2" category="1" size="8" >
+			</argument>
+	</kernel>
+	<kernel name="maxpool2d" csr_addr="768" csr_size="128" work_group_invariant="1" vector_lanes="1" >
+		<work_group size_x="0" size_y="0" size_z="0" max_size="2147483647"/>
+			<argument index="0" type="0" category="0" size="4" >
+			</argument>
+			<argument index="1" type="0" category="0" size="4" >
+			</argument>
+			<argument index="2" type="2" category="1" size="8" >
+			</argument>
+			<argument index="3" type="2" category="1" size="8" >
+			</argument>
+	</kernel>
+</board>

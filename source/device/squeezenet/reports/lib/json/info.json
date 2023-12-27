@@ -1,0 +1,8 @@
+{"name":"Info","rows":[
+{"name":"Project Name","data":["squeezenet"],"classes":["info-table"]},
+{"name":"Target Family, Device, Board","data":["Cyclone V, 5CSXFC6D6F31C8ES, de10_nano:de10_nano_sharedonly"]},
+{"name":"AOC Version","data":["18.0.0 Build 614"]},
+{"name":"Quartus Version","data":["18.0.0 Build 614"]},
+{"name":"Command","data":["aoc squeezenet.cl -report"]},
+{"name":"Reports Generated At", "data":["Sun Oct  1 23:33:46 2023"]}
+]}

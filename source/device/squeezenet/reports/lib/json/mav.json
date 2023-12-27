@@ -1,0 +1,1574 @@
+{
+  "nodes":
+  [
+    {
+      "type":"kernel"
+      , "id":2
+      , "name":"maxpool2d"
+      , "children":
+      [
+        {
+          "type":"bb"
+          , "id":3
+          , "name":"maxpool2d.B0"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"11"
+            }
+          ]
+        }
+        , {
+          "type":"bb"
+          , "id":4
+          , "name":"maxpool2d.B1"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"7"
+              , "II":"1968803291"
+              , "Subloops":"Yes"
+              , "Pipelined":"Yes"
+              , "Fmax Bottlenecks":"No"
+              , "Loop Info":"Entry to loop. "
+              , "Loops To":"13"
+            }
+          ]
+        }
+        , {
+          "type":"bb"
+          , "id":5
+          , "name":"maxpool2d.B2"
+          , "children":
+          [
+            {
+              "type":"inst"
+              , "id":8
+              , "name":"Load"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"c:/intelFPGA/18.0/hld/board/terasic/de10_nano/test/github/device/squeezenet.cl"
+                    , "line":30
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Width":"32 bits"
+                  , "Type":"Burst-coalesced"
+                  , "Stall-free":"No"
+                  , "Start Cycle":"13"
+                  , "Latency":"135"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"Best Practices Guide : Load-Store Units"
+                          , "link":"https://www.altera.com/documentation/mwh1391807516407.html#yeo1491314105959"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":10
+              , "name":"loop"
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Start Cycle":"0"
+                  , "Latency":"1"
+                  , "Loops To":"11"
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":11
+              , "name":"loop end"
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Start Cycle":"154"
+                  , "Latency":"1"
+                }
+              ]
+            }
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"154"
+              , "II":"424653767"
+              , "Subloops":"No"
+              , "Pipelined":"Yes"
+              , "Fmax Bottlenecks":"No"
+              , "Loop Info":"Loop is pipelined with II of 424653767. See Loops Analysis for more information."
+            }
+          ]
+        }
+        , {
+          "type":"bb"
+          , "id":6
+          , "name":"maxpool2d.B3"
+          , "children":
+          [
+            {
+              "type":"inst"
+              , "id":9
+              , "name":"Store"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"c:/intelFPGA/18.0/hld/board/terasic/de10_nano/test/github/device/squeezenet.cl"
+                    , "line":36
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Width":"32 bits"
+                  , "Type":"Burst-coalesced"
+                  , "Stall-free":"No"
+                  , "Start Cycle":"4"
+                  , "Latency":"2"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"Best Practices Guide : Load-Store Units"
+                          , "link":"https://www.altera.com/documentation/mwh1391807516407.html#yeo1491314105959"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":12
+              , "name":"begin"
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Start Cycle":"0"
+                  , "Latency":"1"
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":13
+              , "name":"end"
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Start Cycle":"6"
+                  , "Latency":"1"
+                }
+              ]
+            }
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"6"
+              , "II":"1968803291"
+              , "Subloops":"Yes"
+              , "Pipelined":"Yes"
+              , "Fmax Bottlenecks":"No"
+              , "Loop Info":"Exit which branches back to loop. "
+            }
+          ]
+        }
+        , {
+          "type":"bb"
+          , "id":7
+          , "name":"maxpool2d.B4"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"0"
+            }
+          ]
+        }
+      ]
+    }
+    , {
+      "type":"kernel"
+      , "id":15
+      , "name":"conv2d3x3"
+      , "children":
+      [
+        {
+          "type":"bb"
+          , "id":16
+          , "name":"conv2d3x3.B0"
+          , "children":
+          [
+            {
+              "type":"inst"
+              , "id":21
+              , "name":"Load"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"c:/intelFPGA/18.0/hld/board/terasic/de10_nano/test/github/device/squeezenet.cl"
+                    , "line":58
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Width":"32 bits"
+                  , "Type":"Streaming"
+                  , "Stall-free":"No"
+                  , "Start Cycle":"9"
+                  , "Latency":"1"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"Best Practices Guide : Load-Store Units"
+                          , "link":"https://www.altera.com/documentation/mwh1391807516407.html#yeo1491314105959"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":27
+              , "name":"begin"
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Start Cycle":"0"
+                  , "Latency":"1"
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":28
+              , "name":"end"
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Start Cycle":"11"
+                  , "Latency":"1"
+                }
+              ]
+            }
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"11"
+            }
+          ]
+        }
+        , {
+          "type":"bb"
+          , "id":17
+          , "name":"conv2d3x3.B1"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"13"
+              , "II":"22604688"
+              , "Subloops":"Yes"
+              , "Pipelined":"Yes"
+              , "Fmax Bottlenecks":"No"
+              , "Loop Info":"Entry to loop. "
+              , "Loops To":"32"
+            }
+          ]
+        }
+        , {
+          "type":"bb"
+          , "id":18
+          , "name":"conv2d3x3.B2"
+          , "children":
+          [
+            {
+              "type":"inst"
+              , "id":22
+              , "name":"Load"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"c:/intelFPGA/18.0/hld/board/terasic/de10_nano/test/github/device/squeezenet.cl"
+                    , "line":81
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Width":"128 bits"
+                  , "Type":"Burst-non-aligned"
+                  , "Stall-free":"No"
+                  , "Start Cycle":"97"
+                  , "Latency":"154"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"Best Practices Guide : Load-Store Units"
+                          , "link":"https://www.altera.com/documentation/mwh1391807516407.html#yeo1491314105959"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":23
+              , "name":"Load"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"c:/intelFPGA/18.0/hld/board/terasic/de10_nano/test/github/device/squeezenet.cl"
+                    , "line":81
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Width":"128 bits"
+                  , "Type":"Burst-non-aligned"
+                  , "Stall-free":"No"
+                  , "Start Cycle":"97"
+                  , "Latency":"154"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"Best Practices Guide : Load-Store Units"
+                          , "link":"https://www.altera.com/documentation/mwh1391807516407.html#yeo1491314105959"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":24
+              , "name":"Load"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"c:/intelFPGA/18.0/hld/board/terasic/de10_nano/test/github/device/squeezenet.cl"
+                    , "line":81
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Width":"128 bits"
+                  , "Type":"Burst-non-aligned"
+                  , "Stall-free":"No"
+                  , "Start Cycle":"97"
+                  , "Latency":"154"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"Best Practices Guide : Load-Store Units"
+                          , "link":"https://www.altera.com/documentation/mwh1391807516407.html#yeo1491314105959"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":25
+              , "name":"Load"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"c:/intelFPGA/18.0/hld/board/terasic/de10_nano/test/github/device/squeezenet.cl"
+                    , "line":81
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Width":"512 bits"
+                  , "Type":"Burst-non-aligned"
+                  , "Stall-free":"No"
+                  , "Start Cycle":"4"
+                  , "Latency":"247"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"Best Practices Guide : Load-Store Units"
+                          , "link":"https://www.altera.com/documentation/mwh1391807516407.html#yeo1491314105959"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":29
+              , "name":"loop"
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Start Cycle":"0"
+                  , "Latency":"1"
+                  , "Loops To":"30"
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":30
+              , "name":"loop end"
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Start Cycle":"398"
+                  , "Latency":"1"
+                }
+              ]
+            }
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"398"
+              , "II":"-1"
+              , "Subloops":"No"
+              , "Pipelined":"Yes"
+              , "Fmax Bottlenecks":"No"
+              , "Loop Info":"Loop is pipelined with II of 4294967295. See Loops Analysis for more information."
+            }
+          ]
+        }
+        , {
+          "type":"bb"
+          , "id":19
+          , "name":"conv2d3x3.B3"
+          , "children":
+          [
+            {
+              "type":"inst"
+              , "id":26
+              , "name":"Store"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"c:/intelFPGA/18.0/hld/board/terasic/de10_nano/test/github/device/squeezenet.cl"
+                    , "line":89
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Width":"32 bits"
+                  , "Type":"Burst-coalesced"
+                  , "Stall-free":"No"
+                  , "Start Cycle":"7"
+                  , "Latency":"2"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"Best Practices Guide : Load-Store Units"
+                          , "link":"https://www.altera.com/documentation/mwh1391807516407.html#yeo1491314105959"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":31
+              , "name":"begin"
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Start Cycle":"0"
+                  , "Latency":"1"
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":32
+              , "name":"end"
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Start Cycle":"9"
+                  , "Latency":"1"
+                }
+              ]
+            }
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"9"
+              , "II":"22604688"
+              , "Subloops":"Yes"
+              , "Pipelined":"Yes"
+              , "Fmax Bottlenecks":"No"
+              , "Loop Info":"Exit which branches back to loop. "
+            }
+          ]
+        }
+        , {
+          "type":"bb"
+          , "id":20
+          , "name":"conv2d3x3.B4"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"0"
+            }
+          ]
+        }
+      ]
+    }
+    , {
+      "type":"kernel"
+      , "id":33
+      , "name":"conv2d1x1"
+      , "children":
+      [
+        {
+          "type":"bb"
+          , "id":34
+          , "name":"conv2d1x1.B0"
+          , "children":
+          [
+            {
+              "type":"inst"
+              , "id":39
+              , "name":"Load"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"c:/intelFPGA/18.0/hld/board/terasic/de10_nano/test/github/device/squeezenet.cl"
+                    , "line":108
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Width":"32 bits"
+                  , "Type":"Streaming"
+                  , "Stall-free":"No"
+                  , "Start Cycle":"6"
+                  , "Latency":"1"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"Best Practices Guide : Load-Store Units"
+                          , "link":"https://www.altera.com/documentation/mwh1391807516407.html#yeo1491314105959"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":46
+              , "name":"begin"
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Start Cycle":"0"
+                  , "Latency":"1"
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":47
+              , "name":"end"
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Start Cycle":"11"
+                  , "Latency":"1"
+                }
+              ]
+            }
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"11"
+            }
+          ]
+        }
+        , {
+          "type":"bb"
+          , "id":35
+          , "name":"conv2d1x1.B1"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"2"
+              , "II":"80219328"
+              , "Subloops":"Yes"
+              , "Pipelined":"Yes"
+              , "Fmax Bottlenecks":"No"
+              , "Loop Info":"Entry to loop. "
+              , "Loops To":"51"
+            }
+          ]
+        }
+        , {
+          "type":"bb"
+          , "id":36
+          , "name":"conv2d1x1.B2"
+          , "children":
+          [
+            {
+              "type":"inst"
+              , "id":40
+              , "name":"Load"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"c:/intelFPGA/18.0/hld/board/terasic/de10_nano/test/github/device/squeezenet.cl"
+                    , "line":124
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Width":"32 bits"
+                  , "Type":"Burst-coalesced"
+                  , "Stall-free":"No"
+                  , "Start Cycle":"12"
+                  , "Latency":"121"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"Best Practices Guide : Load-Store Units"
+                          , "link":"https://www.altera.com/documentation/mwh1391807516407.html#yeo1491314105959"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":41
+              , "name":"Load"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"c:/intelFPGA/18.0/hld/board/terasic/de10_nano/test/github/device/squeezenet.cl"
+                    , "line":124
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Width":"32 bits"
+                  , "Type":"Burst-coalesced"
+                  , "Stall-free":"No"
+                  , "Start Cycle":"12"
+                  , "Latency":"121"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"Best Practices Guide : Load-Store Units"
+                          , "link":"https://www.altera.com/documentation/mwh1391807516407.html#yeo1491314105959"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":42
+              , "name":"Load"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"c:/intelFPGA/18.0/hld/board/terasic/de10_nano/test/github/device/squeezenet.cl"
+                    , "line":124
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Width":"32 bits"
+                  , "Type":"Burst-coalesced"
+                  , "Stall-free":"No"
+                  , "Start Cycle":"12"
+                  , "Latency":"121"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"Best Practices Guide : Load-Store Units"
+                          , "link":"https://www.altera.com/documentation/mwh1391807516407.html#yeo1491314105959"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":43
+              , "name":"Load"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"c:/intelFPGA/18.0/hld/board/terasic/de10_nano/test/github/device/squeezenet.cl"
+                    , "line":124
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Width":"32 bits"
+                  , "Type":"Burst-coalesced"
+                  , "Stall-free":"No"
+                  , "Start Cycle":"12"
+                  , "Latency":"121"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"Best Practices Guide : Load-Store Units"
+                          , "link":"https://www.altera.com/documentation/mwh1391807516407.html#yeo1491314105959"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":44
+              , "name":"Load"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"c:/intelFPGA/18.0/hld/board/terasic/de10_nano/test/github/device/squeezenet.cl"
+                    , "line":124
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Width":"128 bits"
+                  , "Type":"Burst-coalesced"
+                  , "Stall-free":"No"
+                  , "Start Cycle":"3"
+                  , "Latency":"130"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"Best Practices Guide : Load-Store Units"
+                          , "link":"https://www.altera.com/documentation/mwh1391807516407.html#yeo1491314105959"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":48
+              , "name":"loop"
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Start Cycle":"0"
+                  , "Latency":"1"
+                  , "Loops To":"49"
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":49
+              , "name":"loop end"
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Start Cycle":"204"
+                  , "Latency":"1"
+                }
+              ]
+            }
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"204"
+              , "II":"-1"
+              , "Subloops":"No"
+              , "Pipelined":"Yes"
+              , "Fmax Bottlenecks":"No"
+              , "Loop Info":"Loop is pipelined with II of 4294967295. See Loops Analysis for more information."
+            }
+          ]
+        }
+        , {
+          "type":"bb"
+          , "id":37
+          , "name":"conv2d1x1.B3"
+          , "children":
+          [
+            {
+              "type":"inst"
+              , "id":45
+              , "name":"Store"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"c:/intelFPGA/18.0/hld/board/terasic/de10_nano/test/github/device/squeezenet.cl"
+                    , "line":130
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Width":"32 bits"
+                  , "Type":"Burst-coalesced"
+                  , "Stall-free":"No"
+                  , "Start Cycle":"7"
+                  , "Latency":"2"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"Best Practices Guide : Load-Store Units"
+                          , "link":"https://www.altera.com/documentation/mwh1391807516407.html#yeo1491314105959"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":50
+              , "name":"begin"
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Start Cycle":"0"
+                  , "Latency":"1"
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":51
+              , "name":"end"
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Start Cycle":"9"
+                  , "Latency":"1"
+                }
+              ]
+            }
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"9"
+              , "II":"80219328"
+              , "Subloops":"Yes"
+              , "Pipelined":"Yes"
+              , "Fmax Bottlenecks":"No"
+              , "Loop Info":"Exit which branches back to loop. "
+            }
+          ]
+        }
+        , {
+          "type":"bb"
+          , "id":38
+          , "name":"conv2d1x1.B4"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"0"
+            }
+          ]
+        }
+      ]
+    }
+    , {
+      "type":"kernel"
+      , "id":52
+      , "name":"avgpool2d"
+      , "children":
+      [
+        {
+          "type":"bb"
+          , "id":53
+          , "name":"avgpool2d.B0"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"4"
+            }
+          ]
+        }
+        , {
+          "type":"bb"
+          , "id":54
+          , "name":"avgpool2d.B1"
+          , "children":
+          [
+            {
+              "type":"inst"
+              , "id":56
+              , "name":"Load"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"c:/intelFPGA/18.0/hld/board/terasic/de10_nano/test/github/device/squeezenet.cl"
+                    , "line":149
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Width":"32 bits"
+                  , "Type":"Burst-coalesced"
+                  , "Stall-free":"No"
+                  , "Start Cycle":"3"
+                  , "Latency":"135"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"Best Practices Guide : Load-Store Units"
+                          , "link":"https://www.altera.com/documentation/mwh1391807516407.html#yeo1491314105959"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":58
+              , "name":"loop"
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Start Cycle":"0"
+                  , "Latency":"1"
+                  , "Loops To":"59"
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":59
+              , "name":"loop end"
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Start Cycle":"156"
+                  , "Latency":"1"
+                }
+              ]
+            }
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"156"
+              , "II":"80219328"
+              , "Subloops":"No"
+              , "Pipelined":"Yes"
+              , "Fmax Bottlenecks":"No"
+              , "Loop Info":"Loop is pipelined with II of 80219328. See Loops Analysis for more information."
+            }
+          ]
+        }
+        , {
+          "type":"bb"
+          , "id":55
+          , "name":"avgpool2d.B2"
+          , "children":
+          [
+            {
+              "type":"inst"
+              , "id":57
+              , "name":"Store"
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"c:/intelFPGA/18.0/hld/board/terasic/de10_nano/test/github/device/squeezenet.cl"
+                    , "line":152
+                  }
+                ]
+              ]
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Width":"32 bits"
+                  , "Type":"Streaming"
+                  , "Stall-free":"No"
+                  , "Start Cycle":"24"
+                  , "Latency":"1"
+                  , "Reference":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"See %L for more information"
+                      , "links":
+                      [
+                        {
+                          "guide":"Best Practices Guide : Load-Store Units"
+                          , "link":"https://www.altera.com/documentation/mwh1391807516407.html#yeo1491314105959"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":60
+              , "name":"begin"
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Start Cycle":"0"
+                  , "Latency":"1"
+                }
+              ]
+            }
+            , {
+              "type":"inst"
+              , "id":61
+              , "name":"end"
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Start Cycle":"25"
+                  , "Latency":"1"
+                }
+              ]
+            }
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Latency":"25"
+            }
+          ]
+        }
+      ]
+    }
+    , {
+      "type":"memtype"
+      , "id":1
+      , "name":"Global Memory"
+      , "children":
+      [
+        {
+          "type":"memsys"
+          , "id":14
+          , "name":"Unknown name"
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Number of banks":"1"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+  , "links":
+  [
+    {
+      "from":13
+      , "to":4
+    }
+    , {
+      "from":3
+      , "to":4
+    }
+    , {
+      "from":11
+      , "to":10
+    }
+    , {
+      "from":4
+      , "to":10
+    }
+    , {
+      "from":8
+      , "to":11
+    }
+    , {
+      "from":11
+      , "to":12
+    }
+    , {
+      "from":9
+      , "to":13
+    }
+    , {
+      "from":13
+      , "to":7
+    }
+    , {
+      "from":10
+      , "to":8
+    }
+    , {
+      "from":12
+      , "to":9
+    }
+    , {
+      "from":9
+      , "to":14
+    }
+    , {
+      "from":14
+      , "to":8
+    }
+    , {
+      "from":21
+      , "to":28
+    }
+    , {
+      "from":32
+      , "to":17
+    }
+    , {
+      "from":28
+      , "to":17
+    }
+    , {
+      "from":30
+      , "to":29
+    }
+    , {
+      "from":17
+      , "to":29
+    }
+    , {
+      "from":22
+      , "to":30
+    }
+    , {
+      "from":23
+      , "to":30
+    }
+    , {
+      "from":24
+      , "to":30
+    }
+    , {
+      "from":25
+      , "to":30
+    }
+    , {
+      "from":30
+      , "to":31
+    }
+    , {
+      "from":26
+      , "to":32
+    }
+    , {
+      "from":32
+      , "to":20
+    }
+    , {
+      "from":27
+      , "to":21
+    }
+    , {
+      "from":29
+      , "to":22
+    }
+    , {
+      "from":29
+      , "to":23
+    }
+    , {
+      "from":29
+      , "to":24
+    }
+    , {
+      "from":29
+      , "to":25
+    }
+    , {
+      "from":31
+      , "to":26
+    }
+    , {
+      "from":14
+      , "to":21
+    }
+    , {
+      "from":14
+      , "to":22
+    }
+    , {
+      "from":14
+      , "to":25
+    }
+    , {
+      "from":26
+      , "to":14
+    }
+    , {
+      "from":14
+      , "to":24
+    }
+    , {
+      "from":14
+      , "to":23
+    }
+    , {
+      "from":39
+      , "to":47
+    }
+    , {
+      "from":51
+      , "to":35
+    }
+    , {
+      "from":47
+      , "to":35
+    }
+    , {
+      "from":49
+      , "to":48
+    }
+    , {
+      "from":35
+      , "to":48
+    }
+    , {
+      "from":40
+      , "to":49
+    }
+    , {
+      "from":41
+      , "to":49
+    }
+    , {
+      "from":42
+      , "to":49
+    }
+    , {
+      "from":43
+      , "to":49
+    }
+    , {
+      "from":44
+      , "to":49
+    }
+    , {
+      "from":49
+      , "to":50
+    }
+    , {
+      "from":45
+      , "to":51
+    }
+    , {
+      "from":51
+      , "to":38
+    }
+    , {
+      "from":46
+      , "to":39
+    }
+    , {
+      "from":48
+      , "to":40
+    }
+    , {
+      "from":48
+      , "to":41
+    }
+    , {
+      "from":48
+      , "to":42
+    }
+    , {
+      "from":48
+      , "to":43
+    }
+    , {
+      "from":48
+      , "to":44
+    }
+    , {
+      "from":50
+      , "to":45
+    }
+    , {
+      "from":14
+      , "to":41
+    }
+    , {
+      "from":45
+      , "to":14
+    }
+    , {
+      "from":14
+      , "to":42
+    }
+    , {
+      "from":14
+      , "to":44
+    }
+    , {
+      "from":14
+      , "to":43
+    }
+    , {
+      "from":14
+      , "to":39
+    }
+    , {
+      "from":14
+      , "to":40
+    }
+    , {
+      "from":59
+      , "to":58
+    }
+    , {
+      "from":53
+      , "to":58
+    }
+    , {
+      "from":56
+      , "to":59
+    }
+    , {
+      "from":59
+      , "to":60
+    }
+    , {
+      "from":57
+      , "to":61
+    }
+    , {
+      "from":58
+      , "to":56
+    }
+    , {
+      "from":60
+      , "to":57
+    }
+    , {
+      "from":14
+      , "to":56
+    }
+    , {
+      "from":57
+      , "to":14
+    }
+  ]
+}
