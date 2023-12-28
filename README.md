@@ -34,6 +34,8 @@ chmod +x squeezenet
 
 ./squeezenet
 
-詳細請參考PDF檔
+詳細請參考PDF檔:
+https://github.com/ChenChungKo/squeezenet/blob/main/getting_started.pdf
+https://github.com/ChenChungKo/squeezenet/blob/main/input_image.pdf
 
 source code說明請參考原創作者:https://github.com/Er1cZ/Deploying_CNN_on_FPGA_using_OpenCL
