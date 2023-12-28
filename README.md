@@ -1,7 +1,8 @@
 # squeezenet
  Deploying_CNN_on_FPGA_using_OpenCL
  
- 我將原作者的範例https://github.com/Er1cZ/Deploying_CNN_on_FPGA_using_OpenCL，修改成可以自己更改輸入的圖片。
+ 我將原作者的範例，修改成可以自己更改輸入的圖片。
+ https://github.com/Er1cZ/Deploying_CNN_on_FPGA_using_OpenCL
  
  第一步:
  
